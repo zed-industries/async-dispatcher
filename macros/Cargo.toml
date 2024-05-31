@@ -2,6 +2,8 @@
 name = "async-dispatcher-macros"
 version = "0.1.0"
 edition = "2018"
+license = "Apache-2.0"
+description = "Convenience macros for async-dispatcher"
 
 [lib]
 proc-macro = true
