@@ -130,7 +130,7 @@ impl fmt::Display for TimeoutError {
     }
 }
 
-pub fn current_thread_dispatcher() -> impl Dispatcher {
+pub fn thread_dispatcher() -> impl Dispatcher {
     struct SimpleDispatcher {
         tx: std::sync::mpsc::Sender<(Runnable, Option<Instant>)>,
         _thread: std::thread::JoinHandle<()>,

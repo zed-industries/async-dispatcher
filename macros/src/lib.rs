@@ -21,7 +21,7 @@ pub fn test(_attr: TokenStream, item: TokenStream) -> TokenStream {
         #[::core::prelude::v1::test]
         #(#attrs)*
         #vis fn #name() #ret {
-            ::async_dispatcher::set_dispatcher(::async_dispatcher::current_thread_dispatcher());
+            ::async_dispatcher::set_dispatcher(::async_dispatcher::thread_dispatcher());
             ::async_dispatcher::block_on(async { #body })
         }
     };
@@ -46,7 +46,7 @@ pub fn main(_attr: TokenStream, item: TokenStream) -> TokenStream {
     let result = quote::quote! {
         #(#attrs)*
         fn main() #ret {
-            ::async_dispatcher::set_dispatcher(::async_dispatcher::current_thread_dispatcher());
+            ::async_dispatcher::set_dispatcher(::async_dispatcher::thread_dispatcher());
             ::async_dispatcher::block_on(async { #body })
         }
     };
