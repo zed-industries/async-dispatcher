@@ -6,7 +6,7 @@ license = "Apache-2.0"
 description = "async runtime based on a pluggable dispatcher"
 
 [features]
-"test-macro" = ["async-dispatcher-macros"]
+"macros" = ["async-dispatcher-macros"]
 
 [dependencies]
 async-task = "4.7"
