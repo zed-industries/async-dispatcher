@@ -1,5 +1,8 @@
 # Async Dispatcher
 
+[![crates.io version](https://img.shields.io/crates/v/async-dispatcher.svg?style=flat-square)](https://crates.io/crates/async-dispatcher)
+[![docs](https://docs.rs/async-dispatcher/badge.svg)](https://docs.rs/async-dispatcher)
+
 This crate allows async libraries to spawn tasks and set timers without being tied to a particular async runtime.
 
 The core of this need comes from wanting to be able to use the native OS scheduler, as written about in [Zed Decoded: Async Rust](https://zed.dev/blog/zed-decoded-async-rust).
