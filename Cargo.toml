@@ -3,6 +3,7 @@ name = "async-dispatcher"
 version = "0.1.0"
 edition = "2021"
 license = "Apache-2.0"
+description = "async runtime based on a pluggable dispatcher"
 
 [features]
 "test-macro" = ["async-dispatcher-macros"]
