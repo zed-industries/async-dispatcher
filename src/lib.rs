@@ -186,8 +186,8 @@ pub fn thread_dispatcher() -> impl Dispatcher {
     SimpleDispatcher { tx, _thread }
 }
 
-#[cfg(feature = "test-macro")]
+#[cfg(feature = "macros")]
 pub use async_dispatcher_macros::test;
 
-#[cfg(feature = "test-macro")]
+#[cfg(feature = "macros")]
 pub use async_dispatcher_macros::main;
