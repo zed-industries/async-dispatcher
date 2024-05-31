@@ -2,6 +2,7 @@
 
 [![crates.io version](https://img.shields.io/crates/v/async-dispatcher.svg?style=flat-square)](https://crates.io/crates/async-dispatcher)
 [![docs](https://docs.rs/async-dispatcher/badge.svg)](https://docs.rs/async-dispatcher)
+![CI](https://github.com/zed-industries/async-dispatcher/actions/workflows/ci.yml/badge.svg)
 
 This crate allows async libraries to spawn tasks and set timers without being tied to a particular async runtime.
 
